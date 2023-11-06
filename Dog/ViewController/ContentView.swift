@@ -11,10 +11,13 @@ import MediaPlayer
 
 struct ContentView: View {
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass
+
+    
     var body: some View {
         ZStack {
             Color.black
-            PortraitView()
+            LandscapeView()
 
         }
         .preferredColorScheme(.dark)

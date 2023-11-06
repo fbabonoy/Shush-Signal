@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct SoundModel{
     var volume: Float
@@ -18,8 +19,6 @@ struct SoundModel{
 class SoundController: ObservableObject {
     @Published var soundModel: SoundModel
     
-
-    
     init() {
         self.soundModel = SoundModel(volume: 0.25, hertz: 50.0, isSelected: false, buttonAnimation: false, sound: ToneV2())
     }
@@ -30,5 +29,13 @@ class SoundController: ObservableObject {
             soundModel.buttonAnimation.toggle()
             soundModel.sound.stop()
         }
+    }
+    
+    var continuousButtonColor: Color {
+        if soundModel.isSelected {
+            return Color.green
+        }
+        
+        return .init(red: 0.1, green: 0.1, blue: 0.1)
     }
 }

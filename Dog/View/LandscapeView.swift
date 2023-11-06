@@ -8,60 +8,57 @@
 import SwiftUI
 
 struct LandscapeView: View {
+    @ObservedObject var soundController: SoundController = SoundController()
     
-    @State var volume: Float = 0.25
-    @State var hertz: Double = 50.0
-    @State var isPresented: Bool = false
-    @State var isSelected = false
-    
-    
-    var continuousButtonColor: Color {
-        if isSelected {
-            return Color.green
-        }
+    let lansdcaper = true
         
-        return .init(red: 0.1, green: 0.1, blue: 0.1)
-    }
-
     var body: some View {
         GeometryReader { screen in
             
-            HStack(alignment: .center){
-//                Spacer()
-                
-                SoundButton(buttonAnimation: .constant(false), continuous: $isPresented, size: screen.size.height, volume: volume, hertz: hertz, unit: ToneV2())
+            HStack {
+                VStack {
+                    SoundButton(buttonAnimation: $soundController.soundModel.buttonAnimation,
+                                continuous: $soundController.soundModel.isSelected,
+                                size: screen.size.height,
+                                volume: soundController.soundModel.volume,
+                                hertz: soundController.soundModel.hertz,
+                                unit: soundController.soundModel.sound)
                     .animation(.spring(), value: screen.size)
-//                Spacer()
+                }
+                .frame(height: screen.size.width / 2)
                 
-//                
-//                Button {
-//                    isSelected.toggle()
-//                } label: {
-//                    Text("Continuous")
-//                }
-//                .font(.title)
-//                .padding(10)
-//                .foregroundColor(isSelected ? .black : .white)
-//                .background(continuousButtonColor)
-//                .cornerRadius(50)
-//                
-//                Spacer()
-//                
-//                Slider(value: $hertz, in: 1...200)
-//                    .tint(.green)
-//                
-//                Spacer()
-//                
-//                
-//                Text("\(Int(hertz) * 100) Hz")
-//                    .font(.title)
-//                Spacer()
-                
+                VStack {
+                    Spacer()
+                    
+                    Button {
+                        soundController.toggleContinuous()
+                    } label: {
+                        Text("Continuous")
+                    }
+                    .font(.title)
+                    .padding(10)
+                    .foregroundColor(soundController.soundModel.isSelected ? .black : .white)
+                    .background(soundController.continuousButtonColor)
+                    .cornerRadius(50)
+                    
+                    Spacer()
+                    
+                    Slider(value: $soundController.soundModel.hertz, in: 1...200)
+                        .tint(.green)
+                    
+                    Spacer()
+                    
+                    
+                    Text("\(Int(soundController.soundModel.hertz) * 100) Hz")
+                        .font(.title)
+                    Spacer()
+                }
                 
             }
+            .padding(.vertical)
+            
         }
     }
-    
     
 }
 
