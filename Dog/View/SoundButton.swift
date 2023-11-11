@@ -9,16 +9,16 @@ import SwiftUI
 import AVFoundation
 
 struct SoundButton: View {
-    
-    @Binding var buttonAnimation: Bool
-    @Binding var continuous: Bool
+    @ObservedObject var soundController: SoundController = SoundController()
+
     var size: CGFloat
-    var volume: Float
-    var hertz: Double
-    let unit: ToneV2
+
+    private var unit: ToneV2 {
+        soundController.soundModel.sound
+    }
     
     private var colorPicker: Color {
-        buttonAnimation == true ? .green : .init(red: 0.1, green: 0.1, blue: 0.1)
+        soundController.soundModel.buttonAnimation == true ? .green : .init(red: 0.1, green: 0.1, blue: 0.1)
     }
     
     private var width: Double {
@@ -26,62 +26,65 @@ struct SoundButton: View {
     }
     
     var body: some View {
-        Button {
-            
-            if !buttonAnimation && continuous {
-                startTone()
-            } else {
-                stopTone()
-            }
-            
-        } label: {
-            ZStack {
-                Color.init(red: 0.0, green: 0.5, blue: 0.0)
-                    .frame(width: size * 0.99, height:  size * 0.99)
-                    .cornerRadius(size * 0.1)
+        VStack {
+            Button {
                 
-                colorPicker
-                    .frame(width: width, height:  width)
-                    .cornerRadius(width * 0.1)
-                    .animation(.easeOut(duration: 0.2), value: colorPicker)
+                if !soundController.soundModel.buttonAnimation && soundController.soundModel.isSelected {
+                    startTone()
+                } else {
+                    stopTone()
+                }
                 
-                Image(systemName: "waveform.path")
-                    .resizable()
-                    .padding()
-                    .frame(width: size / 1.5, height:  size / 1.5)
-                    .modifier(WigglingAnimationModifier(isPressed: $buttonAnimation))
+            } label: {
+                ZStack {
+                    Color.init(red: 0.0, green: 0.5, blue: 0.0)
+                        .frame(width: size * 0.99, height:  size * 0.99)
+                        .cornerRadius(size * 0.1)
+                    
+                    colorPicker
+                        .frame(width: width, height:  width)
+                        .cornerRadius(width * 0.1)
+                        .animation(.easeOut(duration: 0.2), value: colorPicker)
+                    
+                    Image(systemName: "waveform.path")
+                        .resizable()
+                        .padding()
+                        .frame(width: size / 1.5, height:  size / 1.5)
+                        .modifier(WigglingAnimationModifier(isPressed: $soundController.soundModel.buttonAnimation))
+                }
+                
             }
-            
+            .simultaneousGesture(
+                DragGesture(minimumDistance: 0)
+                    .onChanged({ _ in
+                        if !soundController.soundModel.isSelected {
+                            startTone()
+                        }
+                        
+                    })
+                    .onEnded({ _ in
+                        if !soundController.soundModel.isSelected {
+                            stopTone()
+                        }
+                        
+                    })
+            )
         }
-        .simultaneousGesture(
-            DragGesture(minimumDistance: 0)
-                .onChanged({ _ in
-                    if !continuous {
-                        startTone()
-                    }
-                    
-                })
-                .onEnded({ _ in
-                    if !continuous {
-                        stopTone()
-                    }
-                    
-                })
-        )
+        .animation(.spring(), value: size)
     }
     
     private func startTone() {
-        buttonAnimation = true
+        soundController.soundModel.buttonAnimation = true
         unit.toneCount = 64000
-        unit.setFrequency(freq: hertz * 100)
-        unit.setToneVolume(vol: Double(volume))
+        unit.setFrequency(freq: soundController.soundModel.hertz * 100)
+        unit.setToneVolume(vol: Double(soundController.soundModel.volume))
         unit.enableSpeaker()
         unit.startTone()
     }
     
     private func stopTone() {
         unit.stopTone()
-        buttonAnimation = false
+        soundController.soundModel.buttonAnimation = false
         unit.stop()
     }
 }
@@ -91,7 +94,7 @@ struct SoundButton: View {
 struct Button_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { screen in
-            SoundButton(buttonAnimation: .constant(false), continuous: .constant(false), size: screen.size.width, volume: 0.30, hertz: 1000.0, unit: ToneV2())
+            SoundButton(soundController: SoundController(), size: screen.size.width)
             
         }
     }

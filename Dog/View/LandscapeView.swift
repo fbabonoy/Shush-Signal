@@ -16,20 +16,35 @@ struct LandscapeView: View {
         GeometryReader { screen in
             
             HStack {
-                VStack {
-                    SoundButton(buttonAnimation: $soundController.soundModel.buttonAnimation,
-                                continuous: $soundController.soundModel.isSelected,
-                                size: screen.size.height,
-                                volume: soundController.soundModel.volume,
-                                hertz: soundController.soundModel.hertz,
-                                unit: soundController.soundModel.sound)
+                SoundButton(soundController: soundController,
+                            size: screen.size.height)
+                .frame(width: screen.size.width / 2)
+                
+                Spacer()
+                
+                SettingsView(soundController: soundController, width: screen.size.width)
+                    .frame(width: screen.size.width / 2.5)
+
+
+            }
+            .padding(.vertical)
+        }
+    }
+    var old: some View {
+        GeometryReader { screen in
+            
+            HStack {
+                HStack {
+                    SoundButton(soundController: soundController,
+                                size: screen.size.height)
                     .animation(.spring(), value: screen.size)
                 }
                 .frame(height: screen.size.width / 2)
-                
+                Spacer()
+
                 VStack {
                     Spacer()
-                    
+
                     Button {
                         soundController.toggleContinuous()
                     } label: {
@@ -53,6 +68,9 @@ struct LandscapeView: View {
                         .font(.title)
                     Spacer()
                 }
+                .frame(width: screen.size.width / 2)
+
+
                 
             }
             .padding(.vertical)

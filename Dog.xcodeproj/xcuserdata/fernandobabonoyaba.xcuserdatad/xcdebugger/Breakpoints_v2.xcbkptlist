@@ -30,8 +30,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "stopTone()"
             landmarkType = "7">
             <Locations>
@@ -141,8 +141,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
             landmarkName = "startTone()"
             landmarkType = "7">
             <Locations>
@@ -204,8 +204,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -283,8 +283,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -347,6 +347,22 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CDE2F03E-7DA5-406A-9657-8F10C3DA5545"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dog/View/SoundButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
             endingLineNumber = "31"
             landmarkName = "body"
@@ -356,17 +372,79 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "CDE2F03E-7DA5-406A-9657-8F10C3DA5545"
-            shouldBeEnabled = "Yes"
+            uuid = "6DB27071-1FCD-4C32-BC2B-2B0B969136D7"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Dog/View/SoundButton.swift"
+            filePath = "Dog/ViewController/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
             landmarkName = "body"
             landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6DB27071-1FCD-4C32-BC2B-2B0B969136D7 - 1b9f935098604d93"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Color, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;Dog.PortraitView, Dog.LandscapeView&gt;, SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(Dog.PortraitView, SwiftUI.Text)&gt;&gt;&gt;)&gt; in Dog.ContentView.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/ViewController/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "6DB27071-1FCD-4C32-BC2B-2B0B969136D7 - 5889baac69f4a604"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Color, SwiftUI._ConditionalContent&lt;SwiftUI._ConditionalContent&lt;Dog.PortraitView, Dog.LandscapeView&gt;, SwiftUI._ConditionalContent&lt;SwiftUI.Text, SwiftUI.TupleView&lt;(SwiftUI._ConditionalContent&lt;Dog.LandscapeView, Dog.PortraitView&gt;, SwiftUI.Text)&gt;&gt;&gt;)&gt; in Dog.ContentView.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/ViewController/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "23"
+                  endingLineNumber = "23"
+                  offsetFromSymbolStart = "324">
+               </Location>
+               <Location
+                  uuid = "6DB27071-1FCD-4C32-BC2B-2B0B969136D7 - 176108bf96c3fb15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dog.ContentView.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/ViewController/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "21"
+                  endingLineNumber = "21"
+                  offsetFromSymbolStart = "368">
+               </Location>
+               <Location
+                  uuid = "6DB27071-1FCD-4C32-BC2B-2B0B969136D7 - b2787c313c441feb"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.Color, SwiftUI._ConditionalContent&lt;Dog.PortraitView, SwiftUI._ConditionalContent&lt;Dog.LandscapeView, Dog.PortraitView&gt;&gt;)&gt; in Dog.ContentView.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/ViewController/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

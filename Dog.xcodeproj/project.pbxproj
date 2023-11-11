@@ -17,6 +17,7 @@
 		242063932AE7EF64002B4E13 /* LandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242063922AE7EF64002B4E13 /* LandscapeView.swift */; };
 		242063952AE89E81002B4E13 /* ToneV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242063942AE89E81002B4E13 /* ToneV2.swift */; };
 		246E9C982AF3248F001F29BA /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9C972AF3248F001F29BA /* SoundModel.swift */; };
+		246E9C9C2AF9E90D001F29BA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9C9B2AF9E90D001F29BA /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		242063922AE7EF64002B4E13 /* LandscapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeView.swift; sourceTree = "<group>"; };
 		242063942AE89E81002B4E13 /* ToneV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneV2.swift; sourceTree = "<group>"; };
 		246E9C972AF3248F001F29BA /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
+		246E9C9B2AF9E90D001F29BA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				242063922AE7EF64002B4E13 /* LandscapeView.swift */,
 				2404621A2AAF6808001103C2 /* SoundButton.swift */,
 				240462202ABA5846001103C2 /* WiggleModifier.swift */,
+				246E9C9B2AF9E90D001F29BA /* SettingsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				2404620F2AAE6336001103C2 /* ContentView.swift in Sources */,
 				2404621B2AAF6808001103C2 /* SoundButton.swift in Sources */,
 				2404620D2AAE6336001103C2 /* DogApp.swift in Sources */,
+				246E9C9C2AF9E90D001F29BA /* SettingsView.swift in Sources */,
 				242063932AE7EF64002B4E13 /* LandscapeView.swift in Sources */,
 				240462212ABA5846001103C2 /* WiggleModifier.swift in Sources */,
 				246E9C982AF3248F001F29BA /* SoundModel.swift in Sources */,
@@ -323,7 +327,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +358,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
