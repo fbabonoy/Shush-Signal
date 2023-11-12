@@ -34,9 +34,7 @@ struct ContentView: View {
         .preferredColorScheme(.dark)
         .padding(.horizontal)
         .onRotate { newOrientation in
-            soundController.handleLandscape()
-            
-            
+            soundController.resetOnRotation()
             orientation = newOrientation
         }
     }

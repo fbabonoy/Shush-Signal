@@ -30,7 +30,7 @@ struct SettingsView: View {
             Button {
                 soundController.toggleContinuous()
             } label: {
-                Text("Continuous")
+                Text("Hold Sound Button")
             }
             .font(.title)
             .padding(10)
@@ -40,8 +40,6 @@ struct SettingsView: View {
             
             Spacer()
         }
-//        .frame(width: width)
-//        .frame(width: width / 2.5)
     }
 }
 

@@ -14,7 +14,7 @@ struct SoundButton: View {
     var size: CGFloat
 
     private var unit: ToneV2 {
-        soundController.soundModel.sound
+        soundController.tone
     }
     
     private var colorPicker: Color {

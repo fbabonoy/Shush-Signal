@@ -8,16 +8,23 @@
 import Foundation
 import SwiftUI
 
-struct SoundModel{
+struct SoundModel: Codable {
     var volume: Float
     var hertz: Double
     var isSelected: Bool
     var buttonAnimation: Bool
-    var sound: ToneV2
 }
 
 class SoundController: ObservableObject {
-    @Published var soundModel: SoundModel
+    @Published var soundModel: SoundModel {
+        didSet {
+            if let encode = try? JSONEncoder().encode(soundModel) {
+                UserDefaults.standard.set(encode, forKey: "whistle")
+            }
+        }
+    }
+    
+    let tone: ToneV2
     
     var continuousButtonColor: Color {
         if soundModel.isSelected {
@@ -28,20 +35,28 @@ class SoundController: ObservableObject {
     }
     
     init() {
-        self.soundModel = SoundModel(volume: 0.25, hertz: 50.0, isSelected: false, buttonAnimation: false, sound: ToneV2())
-    }
+           if let getData = UserDefaults.standard.data(forKey: "whistle"),
+              let decoded = try? JSONDecoder().decode(SoundModel.self, from: getData) {
+               self.soundModel = decoded
+           } else {
+               // Set a default value if decoding fails
+               self.soundModel = SoundModel(volume: 0.25, hertz: 50.0, isSelected: false, buttonAnimation: false)
+           }
+
+           self.tone = ToneV2()
+       }
     
     func toggleContinuous() {
         soundModel.isSelected.toggle()
         if soundModel.buttonAnimation {
             soundModel.buttonAnimation.toggle()
-            soundModel.sound.stop()
+            tone.stop()
         }
     }
 
-    func handleLandscape() {
+    func resetOnRotation() {
         soundModel.buttonAnimation = false
-        soundModel.sound.stop()
+        tone.stop()
     }
     
 }
