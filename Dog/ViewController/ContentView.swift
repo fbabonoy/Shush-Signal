@@ -19,6 +19,8 @@ struct ContentView: View {
             Color.black
             if orientation.isPortrait {
                 PortraitView(soundController: soundController)
+            } else if orientation.isLandscape {
+                LandscapeView(soundController: soundController)
             } else {
                 if UIDevice.current.orientation.isLandscape {
                     LandscapeView(soundController: soundController)
@@ -54,10 +56,12 @@ struct DeviceRotationViewModifier: ViewModifier {
         content
             .onAppear()
             .onReceive(NotificationCenter.default.publisher(for: UIDevice.orientationDidChangeNotification)) { _ in
-                let badOrientationCheck = UIDevice.current.orientation
-                if !badOrientationCheck.isFlat && badOrientationCheck != .portraitUpsideDown {
-                    action(UIDevice.current.orientation)
+                let currentOrientation = UIDevice.current.orientation
+                // Ignore flat or upside-down orientations
+                if currentOrientation.isFlat || currentOrientation == .portraitUpsideDown {
+                    return
                 }
+                action(currentOrientation)
             }
     }
 }

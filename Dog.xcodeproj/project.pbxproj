@@ -16,9 +16,30 @@
 		242063912AE7EF29002B4E13 /* PortraitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242063902AE7EF29002B4E13 /* PortraitView.swift */; };
 		242063932AE7EF64002B4E13 /* LandscapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242063922AE7EF64002B4E13 /* LandscapeView.swift */; };
 		242063952AE89E81002B4E13 /* ToneV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 242063942AE89E81002B4E13 /* ToneV2.swift */; };
+		24408E792B02BCA5003C2C41 /* DogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24408E782B02BCA5003C2C41 /* DogUITests.swift */; };
+		24408E7B2B02BCA5003C2C41 /* DogUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24408E7A2B02BCA5003C2C41 /* DogUITestsLaunchTests.swift */; };
 		246E9C982AF3248F001F29BA /* SoundModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9C972AF3248F001F29BA /* SoundModel.swift */; };
 		246E9C9C2AF9E90D001F29BA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9C9B2AF9E90D001F29BA /* SettingsView.swift */; };
+		246E9CA42B01BF97001F29BA /* DogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9CA32B01BF97001F29BA /* DogTests.swift */; };
+		246E9CAB2B01C0AE001F29BA /* SoundModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 246E9CAA2B01C0AE001F29BA /* SoundModelTest.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24408E7C2B02BCA5003C2C41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240462012AAE6336001103C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240462082AAE6336001103C2;
+			remoteInfo = Dog;
+		};
+		246E9CA52B01BF97001F29BA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240462012AAE6336001103C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240462082AAE6336001103C2;
+			remoteInfo = Dog;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		240462092AAE6336001103C2 /* Dog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Dog.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -31,12 +52,32 @@
 		242063902AE7EF29002B4E13 /* PortraitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitView.swift; sourceTree = "<group>"; };
 		242063922AE7EF64002B4E13 /* LandscapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeView.swift; sourceTree = "<group>"; };
 		242063942AE89E81002B4E13 /* ToneV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToneV2.swift; sourceTree = "<group>"; };
+		24408E762B02BCA5003C2C41 /* DogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24408E782B02BCA5003C2C41 /* DogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogUITests.swift; sourceTree = "<group>"; };
+		24408E7A2B02BCA5003C2C41 /* DogUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		246E9C972AF3248F001F29BA /* SoundModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModel.swift; sourceTree = "<group>"; };
 		246E9C9B2AF9E90D001F29BA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		246E9CA12B01BF97001F29BA /* DogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		246E9CA32B01BF97001F29BA /* DogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogTests.swift; sourceTree = "<group>"; };
+		246E9CAA2B01C0AE001F29BA /* SoundModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		240462062AAE6336001103C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24408E732B02BCA5003C2C41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E9C9E2B01BF97001F29BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -50,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				2404620B2AAE6336001103C2 /* Dog */,
+				246E9CA22B01BF97001F29BA /* DogTests */,
+				24408E772B02BCA5003C2C41 /* DogUITests */,
 				2404620A2AAE6336001103C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				240462092AAE6336001103C2 /* Dog.app */,
+				246E9CA12B01BF97001F29BA /* DogTests.xctest */,
+				24408E762B02BCA5003C2C41 /* DogUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,7 +113,6 @@
 				2420638F2AE7EE9E002B4E13 /* ViewController */,
 				2420638E2AE7EE96002B4E13 /* Model */,
 				2481BD8F2AD5D0EC003BA9BF /* View */,
-				240462102AAE6337001103C2 /* Assets.xcassets */,
 				240462122AAE6337001103C2 /* Preview Content */,
 			);
 			path = Dog;
@@ -77,6 +121,7 @@
 		240462122AAE6337001103C2 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				240462102AAE6337001103C2 /* Assets.xcassets */,
 				240462132AAE6337001103C2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -98,6 +143,24 @@
 				2404620E2AAE6336001103C2 /* ContentView.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		24408E772B02BCA5003C2C41 /* DogUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24408E782B02BCA5003C2C41 /* DogUITests.swift */,
+				24408E7A2B02BCA5003C2C41 /* DogUITestsLaunchTests.swift */,
+			);
+			path = DogUITests;
+			sourceTree = "<group>";
+		};
+		246E9CA22B01BF97001F29BA /* DogTests */ = {
+			isa = PBXGroup;
+			children = (
+				246E9CA32B01BF97001F29BA /* DogTests.swift */,
+				246E9CAA2B01C0AE001F29BA /* SoundModelTest.swift */,
+			);
+			path = DogTests;
 			sourceTree = "<group>";
 		};
 		2481BD8F2AD5D0EC003BA9BF /* View */ = {
@@ -132,6 +195,42 @@
 			productReference = 240462092AAE6336001103C2 /* Dog.app */;
 			productType = "com.apple.product-type.application";
 		};
+		24408E752B02BCA5003C2C41 /* DogUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24408E802B02BCA5003C2C41 /* Build configuration list for PBXNativeTarget "DogUITests" */;
+			buildPhases = (
+				24408E722B02BCA5003C2C41 /* Sources */,
+				24408E732B02BCA5003C2C41 /* Frameworks */,
+				24408E742B02BCA5003C2C41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24408E7D2B02BCA5003C2C41 /* PBXTargetDependency */,
+			);
+			name = DogUITests;
+			productName = DogUITests;
+			productReference = 24408E762B02BCA5003C2C41 /* DogUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		246E9CA02B01BF97001F29BA /* DogTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 246E9CA72B01BF97001F29BA /* Build configuration list for PBXNativeTarget "DogTests" */;
+			buildPhases = (
+				246E9C9D2B01BF97001F29BA /* Sources */,
+				246E9C9E2B01BF97001F29BA /* Frameworks */,
+				246E9C9F2B01BF97001F29BA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				246E9CA62B01BF97001F29BA /* PBXTargetDependency */,
+			);
+			name = DogTests;
+			productName = DogTests;
+			productReference = 246E9CA12B01BF97001F29BA /* DogTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -139,11 +238,19 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1430;
+				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					240462082AAE6336001103C2 = {
 						CreatedOnToolsVersion = 14.3.1;
+					};
+					24408E752B02BCA5003C2C41 = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 240462082AAE6336001103C2;
+					};
+					246E9CA02B01BF97001F29BA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 240462082AAE6336001103C2;
 					};
 				};
 			};
@@ -161,6 +268,8 @@
 			projectRoot = "";
 			targets = (
 				240462082AAE6336001103C2 /* Dog */,
+				246E9CA02B01BF97001F29BA /* DogTests */,
+				24408E752B02BCA5003C2C41 /* DogUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +281,20 @@
 			files = (
 				240462142AAE6337001103C2 /* Preview Assets.xcassets in Resources */,
 				240462112AAE6337001103C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24408E742B02BCA5003C2C41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E9C9F2B01BF97001F29BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +317,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		24408E722B02BCA5003C2C41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24408E792B02BCA5003C2C41 /* DogUITests.swift in Sources */,
+				24408E7B2B02BCA5003C2C41 /* DogUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		246E9C9D2B01BF97001F29BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246E9CA42B01BF97001F29BA /* DogTests.swift in Sources */,
+				246E9CAB2B01C0AE001F29BA /* SoundModelTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24408E7D2B02BCA5003C2C41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240462082AAE6336001103C2 /* Dog */;
+			targetProxy = 24408E7C2B02BCA5003C2C41 /* PBXContainerItemProxy */;
+		};
+		246E9CA62B01BF97001F29BA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240462082AAE6336001103C2 /* Dog */;
+			targetProxy = 246E9CA52B01BF97001F29BA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		240462152AAE6337001103C2 /* Debug */ = {
@@ -318,16 +472,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dog/Preview Content\"";
 				DEVELOPMENT_TEAM = FM2W8V66MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pop's Shush Signal";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -336,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sound.Training.Dog;
+				PRODUCT_BUNDLE_IDENTIFIER = "Signal.Shush.Pup-s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -349,16 +506,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dog/Preview Content\"";
 				DEVELOPMENT_TEAM = FM2W8V66MZ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pop's Shush Signal";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
@@ -367,11 +527,97 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = sound.Training.Dog;
+				PRODUCT_BUNDLE_IDENTIFIER = "Signal.Shush.Pup-s";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24408E7E2B02BCA5003C2C41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = training.DogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dog;
+			};
+			name = Debug;
+		};
+		24408E7F2B02BCA5003C2C41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = training.DogUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Dog;
+			};
+			name = Release;
+		};
+		246E9CA82B01BF97001F29BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM2W8V66MZ;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = training.DogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dog";
+			};
+			name = Debug;
+		};
+		246E9CA92B01BF97001F29BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FM2W8V66MZ;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = training.DogTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dog.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dog";
 			};
 			name = Release;
 		};
@@ -392,6 +638,24 @@
 			buildConfigurations = (
 				240462182AAE6337001103C2 /* Debug */,
 				240462192AAE6337001103C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24408E802B02BCA5003C2C41 /* Build configuration list for PBXNativeTarget "DogUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24408E7E2B02BCA5003C2C41 /* Debug */,
+				24408E7F2B02BCA5003C2C41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		246E9CA72B01BF97001F29BA /* Build configuration list for PBXNativeTarget "DogTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				246E9CA82B01BF97001F29BA /* Debug */,
+				246E9CA92B01BF97001F29BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

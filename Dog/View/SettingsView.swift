@@ -30,10 +30,11 @@ struct SettingsView: View {
             Button {
                 soundController.toggleContinuous()
             } label: {
-                Text("Hold Sound Button")
+                Text("Hold Sound")
             }
             .font(.title)
             .padding(10)
+            .padding(.horizontal)
             .foregroundColor(soundController.soundModel.isSelected ? .black : .white)
             .background(soundController.continuousButtonColor)
             .cornerRadius(50)

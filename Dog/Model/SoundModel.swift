@@ -16,6 +16,8 @@ struct SoundModel: Codable {
 }
 
 class SoundController: ObservableObject {
+    let unit: ToneV2
+
     @Published var soundModel: SoundModel {
         didSet {
             if let encode = try? JSONEncoder().encode(soundModel) {
@@ -24,7 +26,6 @@ class SoundController: ObservableObject {
         }
     }
     
-    let tone: ToneV2
     
     var continuousButtonColor: Color {
         if soundModel.isSelected {
@@ -37,26 +38,41 @@ class SoundController: ObservableObject {
     init() {
            if let getData = UserDefaults.standard.data(forKey: "whistle"),
               let decoded = try? JSONDecoder().decode(SoundModel.self, from: getData) {
-               self.soundModel = decoded
+               self.soundModel = SoundModel(volume: 0.25, hertz: decoded.hertz, isSelected: decoded.isSelected, buttonAnimation: false)
            } else {
                // Set a default value if decoding fails
                self.soundModel = SoundModel(volume: 0.25, hertz: 50.0, isSelected: false, buttonAnimation: false)
            }
 
-           self.tone = ToneV2()
+           self.unit = ToneV2()
        }
     
     func toggleContinuous() {
         soundModel.isSelected.toggle()
         if soundModel.buttonAnimation {
             soundModel.buttonAnimation.toggle()
-            tone.stop()
+            unit.stop()
         }
     }
 
     func resetOnRotation() {
         soundModel.buttonAnimation = false
-        tone.stop()
+        unit.stop()
+    }
+    
+    func startTone() {
+        soundModel.buttonAnimation = true
+        unit.toneCount = 64000
+        unit.setFrequency(freq: soundModel.hertz * 100)
+        unit.setToneVolume(vol: Double(soundModel.volume))
+        unit.enableSpeaker()
+        unit.startTone()
+    }
+    
+    func stopTone() {
+        unit.stopTone()
+        soundModel.buttonAnimation = false
+        unit.stop()
     }
     
 }

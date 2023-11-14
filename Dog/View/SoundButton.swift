@@ -12,10 +12,6 @@ struct SoundButton: View {
     @ObservedObject var soundController: SoundController = SoundController()
 
     var size: CGFloat
-
-    private var unit: ToneV2 {
-        soundController.tone
-    }
     
     private var colorPicker: Color {
         soundController.soundModel.buttonAnimation == true ? .green : .init(red: 0.1, green: 0.1, blue: 0.1)
@@ -30,9 +26,9 @@ struct SoundButton: View {
             Button {
                 
                 if !soundController.soundModel.buttonAnimation && soundController.soundModel.isSelected {
-                    startTone()
+                    soundController.startTone()
                 } else {
-                    stopTone()
+                    soundController.stopTone()
                 }
                 
             } label: {
@@ -58,35 +54,22 @@ struct SoundButton: View {
                 DragGesture(minimumDistance: 0)
                     .onChanged({ _ in
                         if !soundController.soundModel.isSelected {
-                            startTone()
+                            soundController.startTone()
                         }
                         
                     })
                     .onEnded({ _ in
                         if !soundController.soundModel.isSelected {
-                            stopTone()
+                            soundController.stopTone()
                         }
                         
                     })
             )
         }
         .animation(.spring(), value: size)
+        .accessibilityIdentifier("SoundButton")
     }
     
-    private func startTone() {
-        soundController.soundModel.buttonAnimation = true
-        unit.toneCount = 64000
-        unit.setFrequency(freq: soundController.soundModel.hertz * 100)
-        unit.setToneVolume(vol: Double(soundController.soundModel.volume))
-        unit.enableSpeaker()
-        unit.startTone()
-    }
-    
-    private func stopTone() {
-        unit.stopTone()
-        soundController.soundModel.buttonAnimation = false
-        unit.stop()
-    }
 }
 
 

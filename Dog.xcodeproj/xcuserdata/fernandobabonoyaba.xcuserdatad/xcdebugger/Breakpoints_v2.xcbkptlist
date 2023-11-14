@@ -30,8 +30,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -71,132 +71,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B8F60A50-61A5-4E1E-8F36-00C61F0B3491"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog/View/SoundButton.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "stopTone()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "B8F60A50-61A5-4E1E-8F36-00C61F0B3491 - 2e8f93499cb6313d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.stopTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "112">
-               </Location>
-               <Location
-                  uuid = "B8F60A50-61A5-4E1E-8F36-00C61F0B3491 - 2e8f93499cb6313d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.stopTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "101"
-                  endingLineNumber = "101"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  uuid = "B8F60A50-61A5-4E1E-8F36-00C61F0B3491 - 2e8f93499cb63102"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.stopTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "100"
-                  endingLineNumber = "100"
-                  offsetFromSymbolStart = "32">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "7DED3B25-D0F6-4897-B9EA-2B2B50467AD8"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog/View/SoundButton.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "startTone()"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "7DED3B25-D0F6-4897-B9EA-2B2B50467AD8 - 87f6a80ecc38a44b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.startTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "264">
-               </Location>
-               <Location
-                  uuid = "7DED3B25-D0F6-4897-B9EA-2B2B50467AD8 - 87f6a80ecc38a44b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.startTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "94"
-                  endingLineNumber = "94"
-                  offsetFromSymbolStart = "212">
-               </Location>
-               <Location
-                  uuid = "7DED3B25-D0F6-4897-B9EA-2B2B50467AD8 - 87f6a80ecc38a42a"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Dog.SoundButton.startTone() -&gt; ()"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "93"
-                  endingLineNumber = "93"
-                  offsetFromSymbolStart = "204">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "DCD1E60A-2696-4E4A-8236-F14EAFBFD141"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -204,8 +78,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -276,54 +150,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "69661225-0063-4794-B341-54C700E03815"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Dog/View/SoundButton.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "body"
-            landmarkType = "24">
-            <Locations>
-               <Location
-                  uuid = "69661225-0063-4794-B341-54C700E03815 - 17b997b5ec37f522"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Dog.SoundButton.body.getter : some"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "36">
-               </Location>
-               <Location
-                  uuid = "69661225-0063-4794-B341-54C700E03815 - 17b997b5ec37f522"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 () -&gt; () in Dog.SoundButton.body.getter : some"
-                  moduleName = "Dog"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "46"
-                  endingLineNumber = "46"
-                  offsetFromSymbolStart = "140">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "7CAE8922-2ED9-4C0A-8CD7-2A8E217308AC"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -347,8 +173,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -363,8 +189,8 @@
             filePath = "Dog/View/SoundButton.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "body"
             landmarkType = "24">
          </BreakpointContent>
@@ -443,6 +269,76 @@
                   startingLineNumber = "20"
                   endingLineNumber = "20"
                   offsetFromSymbolStart = "228">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6955E0A4-56C4-48F3-B386-D92C6688E91D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dog/View/SoundButton.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "6955E0A4-56C4-48F3-B386-D92C6688E91D - 2f3aae26be15929b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dog.SoundButton.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "256">
+               </Location>
+               <Location
+                  uuid = "6955E0A4-56C4-48F3-B386-D92C6688E91D - 9a4c95ea071c6c02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.simultaneousGesture&lt;&#x3c4;_0_0 where &#x3c4;_1_0: SwiftUI.Gesture&gt;(_: &#x3c4;_1_0, including: SwiftUI.GestureMask) -&gt; some&gt;&gt;.0 in Dog.SoundButton.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "504">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.AddressBreakpoint">
+         <BreakpointContent
+            uuid = "F2EC6683-D43F-4C7F-A1C3-E8B3ADAA300B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            symbolName = "*0x180513fbc">
+            <Locations>
+               <Location
+                  uuid = "F2EC6683-D43F-4C7F-A1C3-E8B3ADAA300B - d89dea777b42051"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__CFRunLoopServiceMachPort.cold.1"
+                  moduleName = "CoreFoundation"
+                  usesParentBreakpointCondition = "Yes"
+                  offsetFromSymbolStart = "76">
                </Location>
             </Locations>
          </BreakpointContent>
