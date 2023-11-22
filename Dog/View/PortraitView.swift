@@ -9,6 +9,11 @@ import SwiftUI
 
 struct PortraitView: View {
     @ObservedObject var soundController: SoundController = SoundController()
+    
+    var isIpad: Bool {
+        UIDevice.current.model == "iPad" ? true : false
+    }
+
    
     var body: some View {
         GeometryReader { screen in
@@ -16,7 +21,7 @@ struct PortraitView: View {
             VStack {
                 SoundButton(soundController: soundController,
                             size: screen.size.width)
-                .frame(height: screen.size.height / 2)
+                .frame(height: isIpad ? screen.size.width : screen.size.height / 2)
                 
                 Spacer()
                 

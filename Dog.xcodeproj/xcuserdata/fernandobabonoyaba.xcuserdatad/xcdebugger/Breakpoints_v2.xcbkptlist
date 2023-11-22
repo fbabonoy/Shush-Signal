@@ -318,6 +318,21 @@
                   endingLineNumber = "25"
                   offsetFromSymbolStart = "504">
                </Location>
+               <Location
+                  uuid = "6955E0A4-56C4-48F3-B386-D92C6688E91D - 2f3aae26be15929b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Dog.SoundButton.body.getter : some"
+                  moduleName = "Dog"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/fernandobabonoyaba/Documents/GithubRepo/dog/Dog/View/SoundButton.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "316">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -341,6 +356,22 @@
                   offsetFromSymbolStart = "76">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9DB38F5F-A4D0-4B25-8E1B-AB09A732AA2A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dog/View/PortraitView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
