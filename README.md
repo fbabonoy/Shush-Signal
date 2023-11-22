@@ -12,7 +12,7 @@ Shush Puppy is an iOS application developed using SwiftUI, designed to assist pe
 <img src="Portrait.png" width="300" />
 <img src="Landscape.png" width="700" />
 
-<iframe src="https://giphy.com/embed/c1ewFR0hj6loehmFwf" width="222" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/c1ewFR0hj6loehmFwf">via GIPHY</a></p>
+[sample](demo.gif)
 
 ## Installation
 To install Shush Puppy, clone this repository and open the project in Xcode. 
