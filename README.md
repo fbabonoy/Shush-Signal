@@ -12,8 +12,6 @@ Shush Puppy is an iOS application developed using SwiftUI, designed to assist pe
 <img src="Portrait.png" width="300" />
 <img src="Landscape.png" width="700" />
 
-[sample](demo.gif)
-
 ## Installation
 To install Shush Puppy, clone this repository and open the project in Xcode. 
 ```
@@ -24,6 +22,8 @@ Then, run the project using the Xcode simulator or on a physical iOS device.
 
 ## Usage
 Upon launching Shush Puppy, users can select different sound frequencies to play. The main screen provides easy access to frequency settings and play controls. Users can test different frequencies to find the most effective one for their dog.
+
+![sample](https://media.giphy.com/media/c1ewFR0hj6loehmFwf/giphy.gif)
 
 ## Contributing
 Contributions to the Shush Puppy project are welcome. If you wish to contribute, please fork the repository and submit a pull request with your proposed changes. For major changes, please open an issue first to discuss what you would like to change.
