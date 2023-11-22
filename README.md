@@ -10,9 +10,9 @@ Shush Puppy is an iOS application developed using SwiftUI, designed to assist pe
 - **AVFoundation for Audio Processing**: Implements Apple's AVFoundation to handle audio functionalities efficiently.
 
 <img src="Portrait.png" width="300" />
-<img src="Landscape.png" width="300" />
+<img src="Landscape.png" width="700" />
 
-![sample](https://github.com/fbabonoy/Shush-Signal/raw/main/video.mp4)
+![video](https://github.com/fbabonoy/Shush-Signal/raw/main/video.mp4)
 
 ## Installation
 To install Shush Puppy, clone this repository and open the project in Xcode. 
